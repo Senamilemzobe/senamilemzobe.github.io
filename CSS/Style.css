@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+/*Bai Jamjuree font link copied from fonts.google.com at 400/500/600/700 size as @import NOT <link>*/
+
+/* Variables used in this project for color,size and font*/
+:root {
+
+    --color-body: #ffff;
+    --color-heading: #eef3db;
+    --color-base: #000000;
+    --color-base2: #000000;
+    --color-brand: #807373cb;
+    --color-brand2: #8b8383;
+    --sidebar-width: 240px;
+    --border-width:1px;
+    --font-base: "Bai Jamjuree";
+    --border-color:rgba(0,0,0,0.10);
+    --border-radius: 30px;
+
+}
+
+
+/*default properties*/
+body {
+    background-color: var(--color-heading);
+    color: var(--color-base2);
+    font-family: var(--font-base), sans-serif;
+    line-height: 1.8;
+}
+
+
+/*Headings color and size*/
+h1,
+h2,
+h5,
+h6 {
+    color: var(--color-base);
+    font-weight: 700;
+}
+
+p,
+h3,
+h4{
+    color: var(--color-heading);
+}
+
+/*The four links states are:
+
+a:link - a normal, unvisited link
+a:visited - a link the user has visited
+a:hover - a link when the user mouses over it
+a:active - a link the moment it is clicked*/
+a {
+    text-decoration: none;
+    /* The text-decoration property is mostly used to remove underlines from links*/
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
+
+/*When setting the style for several link states, there are some order rules:
+
+a:hover MUST come after a:link and a:visited
+a:active MUST come after a:hover*/
+a:hover {
+    color: var(--color-brand);
+}
+
+/*Navbar background image SM Coding*/
+img {
+    width: 100%;
+}
+
+
+.text-brand {
+    color: var(--color-brand);
+}
+
+.bg-base {
+    background-color: var(--color-base);
+}
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(255,255,255, 0.1);
+}
+
+.shadow-effect {
+    transition: all 0.5s;
+}
+
+.shadow-effect:hover {
+    box-shadow: -6px 6px 0 0 var(--color-brand);
+}
+
+.iconbox {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: var(--color-brand);
+    color: var(--color-base);
+}
+
+section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+/*Navigation Bar*/
+
+.navbar {
+    background-color: var(--color-base);
+}
+
+.navbar .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.navbar .nav-link:hover {
+    color: var(--color-brand);
+}
+
+/*changing navigation bar location when you resize the window*/
+@media (min-width: 992px) {
+
+    /*if the size of browser window then...*/
+    .navbar {
+        min-height: 100vh;
+        width: var(--sidebar-width);
+        background: linear-gradient(rgba(0, 0, 0, 0.9), rgb(0, 0, 0)), url(..);
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* CONTENT WRAPPER */
+    #content-wrapper {
+        padding-left: var(--sidebar-width);
+    }
+}
+
+/*HOME */ 
+#home {
+    background: url(../IMAGES/LABRAT.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+#home h1,
+#home p {
+    color: var(#fff);
+}
+
+#home h1 {
+    font-weight: 900;
+}
+
+#home p {
+    font-size: 18px;
+    max-width: 450px;
+}
+
+
+/* btn */
+.btn {
+    padding: 20px 44px;
+    border-width: 2px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* skills */
+.intro {
+    margin-bottom: 60px;
+}
+
+.intro .hr-line {
+    width: 60px;
+    height: 4px;
+    background-color: var(--color-heading);
+    display: inline-block;
+    color:#000000
+}
+
+.intro h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.intro p {
+    max-width: 500px;
+}
+
+.intro.intro-dark h1,
+.intro.intro-dark p {
+    color: rgb(0, 0, 0);
+}
+
+.intro.intro-dark .hr-line {
+    background-color: rgb(3, 3, 3);
+}
+
+#skills {
+    margin-top: 3rem;
+}
+
+.skills-left {
+    width: 50%;
+}
+
+.skills-right {
+    width: 50%;
+}
+
+.skills-container {
+    width: 100%;
+}
+
+.html {
+    width: 90%;
+    height: .5rem;
+    background-color: #ff0062;
+    margin: 1rem 0;
+    border-radius: 12px;
+}
+
+.css {
+    width: 70%;
+    height: .5rem;
+    background-color: #ff00aa;
+    margin: 1rem 0;
+    border-radius: 12px;
+}
+
+.js {
+    width: 50%;
+    height: .5rem;
+    background-color: rgb(242, 0, 255);
+    margin: 1rem 0;
+    border-radius: 12px;
+}
+
+.python {
+    width: 30%;
+    height: .5rem;
+    background-color: #a200ff;
+    margin: 1rem 0;
+    border-radius: 12px;
+}
+
+.react {
+    width: 20%;
+    height: .5rem;
+    background-color: #5900ff;
+    margin: 1rem 0;
+    border-radius: 12px;
+}
+
+.nodejs {
+    width: 15%;
+    height: .5rem;
+    background-color: #0051ff;
+    margin: 1rem 0;
+    border-radius: 12px;
+}
+
+.bar {
+    margin: 2rem 0;
+}
+
+
+/* about */
+#about img {
+    border-radius: var(--border-radius);
+}
+
+/* CARD */
+.card-custom .card-custom-image {
+    overflow: hidden;
+}
+
+.card-custom .card-custom-image img {
+    transition: all 0.4s ease;
+}
+
+.card-custom:hover .card-custom-image img {
+    transform: scale(1.1);
+}
+
+/* CONTACT */
+#contact {
+    padding: 32px;
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius);
+}
+
+#contact .form-control {
+    background-color: var(--color-base);
+    border-color: var(--color-base);
+    color: var(--color-body);
+    border: transparent;
+    border-radius: var(--border-radius);
+    padding-left: 18px;
+}
+
+#contact .form-control:focus {
+    border-color: var(--color-brand);
+    box-shadow: none;
+}
+
+#contact .form-control::placeholder {
+    color: var(--color-body);
+}
+
+#contact input.form-control {
+    height: 56px;
+}
+
+/* footer */
+.footer-top {
+    padding-bottom: 30px;
+    border-bottom: var(--border-width) solid var(--border-color);
+}
+
+.footer-bottom {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* SOCIAL ICONS */
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-base);
+    border-radius: 100px;
+    font-size: 24px;
+}
+

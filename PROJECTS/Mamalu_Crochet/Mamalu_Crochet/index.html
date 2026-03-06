@@ -1,0 +1,3317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mamalu Crochet - eCommerce Website</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style-prefix.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <div class="overlay" data-overlay></div>
+
+  <!--
+    - MODAL
+  -->
+
+  <div class="modal" data-modal>
+
+    <div class="modal-close-overlay" data-modal-overlay></div>
+
+    <div class="modal-content">
+
+      <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="newsletter-img">
+        <img src="./assets/images/me.jpg" alt="subscribe newsletter" width="400" height="400">
+      </div>
+
+      <div class="newsletter">
+
+        <form action="#">
+
+          <div class="newsletter-header">
+
+            <h3 class="newsletter-title">Subscribe Newsletter.</h3>
+
+            <p class="newsletter-desc">
+              Subscribe the <b>Mamalu_Crochet</b> to get latest products and discount update.
+            </p>
+
+          </div>
+
+          <input type="email" name="email" class="email-field" placeholder="Email Address" required>
+
+          <button type="submit" class="btn-newsletter">Subscribe</button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--
+    - NOTIFICATION TOAST
+  -->
+
+  <div class="notification-toast" data-toast>
+
+    <button class="toast-close-btn" data-toast-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="toast-banner">
+      <img src="./assets/images/products/Black beanie.jpg" alt="Black beanie" width="80" height="70">
+    </div>
+
+    <div class="toast-detail">
+
+      <p class="toast-message">
+        Senamile just placed an order
+      </p>
+
+      <p class="toast-title">
+        Black beanie
+      </p>
+
+      <p class="toast-meta">
+        <time datetime="PT2M">2 Minutes</time> ago
+      </p>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--
+    - HEADER
+  -->
+
+  <header>
+
+    <div class="header-top">
+
+      <div class="container">
+
+        <ul class="header-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="header-alert-news">
+          <p>
+            <b>Free Delivery</b>
+            This Week Order Over - R200
+          </p>
+        </div>
+
+        <div class="header-top-actions">
+
+          <select name="currency">
+
+            <option value="zar">ZAR R</option>
+            <option value="usd">USD &dollar;</option>
+
+
+          </select>
+
+          <select name="language">
+
+            <option value="zu-ZA">IsiZulu</option>
+            <option value="en-US">English</option>
+
+
+
+          </select>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="header-main">
+
+      <div class="container">
+
+        <a href="#" class="header-logo">
+          <img src="./assets/images/logo/logo.jpg" alt="Mamalu crochet logo" width="100" height="100">
+        </a>
+
+        <div class="header-search-container">
+
+          <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
+
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="header-user-actions">
+
+          <button class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">10</span>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">1</span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <nav class="desktop-navigation-menu">
+
+      <div class="container">
+
+        <ul class="desktop-menu-category-list">
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Home</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Categories</a>
+
+            <div class="dropdown-panel">
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Accessories</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Crochet Phone pouch</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Crochet Bottle holder</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Crochet Fanny pack</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Crochet Leg warmer</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Crochet Headband</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/Bag.jpg" alt="accessories" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Men</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Crochet Sweater</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Crochet Balaclava</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Crochet Sports vest</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Crochet Socks</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Crochet Sunglasses holder</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/mensset.jpg" alt="men's collection" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Women</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Crochet Crop Tops</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Crochet Dresses</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Crochet Earrings</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Crochet Cosmetics bag</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Crochet Bikini set</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/womensbikini.jpg" alt="women's bikini" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Kids Collection</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Crochet Baby Shoes</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Crochet Mini Beanies</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Crochet Animal Hats</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Crochet Blankets</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Crochet Toys</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/socks.jpg" alt="socks" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Home Decor</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Crochet Cushion Covers </a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Crochet Wall Hangings</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Crochet Table Runners</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Crochet Coasters</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Yeshua inspired</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Crochet Bible covers</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Crochet Book marker</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Crochet Pen holder</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Crochet Church Kit</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Kids</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Crochet Matching set</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Crochet headband</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Crochet Mini bag</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Crochet Bracelets</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Custom orders</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">New design </a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Change size</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Change pattern</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Change colour</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Blog</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Crochet facts</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+
+    <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+      
+      <div class="menu-bottom">
+
+        <ul class="menu-category-list">
+
+          <li class="menu-category">
+
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Language</p>
+
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">English</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">IsiZulu</a>
+              </li>
+
+
+            </ul>
+
+          </li>
+
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Currency</p>
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">ZAR R</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">USD &dollar;</a>
+              </li>
+            </ul>
+
+          </li>
+
+        </ul>
+
+        <ul class="menu-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+
+
+
+  <!--
+    - MAIN
+  -->
+
+  <main>
+
+    <!--
+      - BANNER
+    -->
+
+    <div class="banner">
+
+      <div class="container">
+
+        <div class="slider-container has-scrollbar">
+
+          <div class="slider-item">
+
+            <img src="./assets/images/momme.jpg" alt="women's latest bucket hat fashion" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">Trending item</p>
+
+              <h2 class="banner-title">Women's latest crochet bucket hat</h2>
+
+              <p class="banner-text">
+                starting at R <b>200</b>.00
+              </p>
+
+
+              <a href="#" class="banner-btn">Shop now</a>
+
+            </div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <img src="./assets/images/orange top.jpg" alt="modern sunglasses" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">Trending Flower Top</p>
+
+              <h2 class="banner-title">Summer Tops</h2>
+
+              <p class="banner-text">
+                starting at R <b>150</b>.00
+              </p>
+
+
+              <a href="#" class="banner-btn">Shop now</a>
+
+            </div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <img src="./assets/images/pink hat.jpg" alt="hat" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">Sale Offer</p>
+
+              <h2 class="banner-title">Wool hats sale</h2>
+
+              <p class="banner-text">
+                starting at R <b>255</b>.50
+              </p>
+
+
+              <a href="#" class="banner-btn">Shop now</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - CATEGORY
+    -->
+
+    <div class="category">
+
+      <div class="container">
+
+        <div class="category-item-container has-scrollbar">
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/dress.svg" alt="dress & frock" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Summer wear</h3>
+
+                <p class="category-item-amount">(53)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/coat.svg" alt="winter wear" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Winter wear</h3>
+
+                <p class="category-item-amount">(58)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/glasses.svg" alt="glasses & lens" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Item storages</h3>
+
+                <p class="category-item-amount">(68)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/shorts.svg" alt="shorts & jeans" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Beach Cover Up Pants</h3>
+
+                <p class="category-item-amount">(84)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/tee.svg" alt="t-shirts" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Wool T-shirts</h3>
+
+                <p class="category-item-amount">(35)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/jacket.svg" alt="jacket" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Wool Jacket</h3>
+
+                <p class="category-item-amount">(16)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/watch.svg" alt="watch" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Quick Orders</h3>
+
+                <p class="category-item-amount">(27)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/hat.svg" alt="hat & caps" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Wool Hats</h3>
+
+                <p class="category-item-amount">(39)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - PRODUCT
+    -->
+
+    <div class="product-container">
+
+      <div class="container">
+
+
+        <!--
+          - SIDEBAR
+        -->
+
+        <div class="sidebar  has-scrollbar" data-mobile-menu>
+
+          <div class="sidebar-category">
+
+            <div class="sidebar-top">
+              <h2 class="sidebar-title">Category</h2>
+
+              <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+
+            <ul class="sidebar-menu-category-list">
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icon/crochetsvg.webp" alt="home decor" width="20" height="20"
+                      class="menu-title-img">
+
+                    <p class="menu-title">Home Decor</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Crochet Cushion Covers</p>
+                      <data value="300" class="stock" title="Available Stock">300</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Crochet Wall Hanging</p>
+                      <data value="60" class="stock" title="Available Stock">60</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Crochet Table Runners</p>
+                      <data value="50" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Crochet Coasters</p>
+                      <data value="87" class="stock" title="Available Stock">87</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icon/crochetsvg.webp" alt="footwear" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Yeshua Collection</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Crochet Bible Cover</p>
+                      <data value="45" class="stock" title="Available Stock">45</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Crochet Church Bag</p>
+                      <data value="75" class="stock" title="Available Stock">75</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Crochet Prayer Pillow</p>
+                      <data value="35" class="stock" title="Available Stock">35</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Crochet Pen Case</p>
+                      <data value="26" class="stock" title="Available Stock">26</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icon/crochetsvg.webp" alt="accessories" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Accessories</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Crochet Phone pouch</p>
+                      <data value="46" class="stock" title="Available Stock">46</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Crochet Bottle holder</p>
+                      <data value="73" class="stock" title="Available Stock">73</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Crochet Headband</p>
+                      <data value="61" class="stock" title="Available Stock">61</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icon/crochetsvg.webp" alt="men category" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Men Collection</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Crochet Balaclava</p>
+                      <data value="12" class="stock" title="Available Stock">12</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Crochet Sweater</p>
+                      <data value="60" class="stock" title="Available Stock">60</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Crochet jacket</p>
+                      <data value="50" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Crochet Sunglass holder</p>
+                      <data value="87" class="stock" title="Available Stock">87</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icon/crochetsvg.webp" alt="women category" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Women Collection</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Crochet Cosmetics Bag </p>
+                      <data value="68" class="stock" title="Available Stock">68</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Crochet Earings</p>
+                      <data value="46" class="stock" title="Available Stock">46</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Crochet Dresses</p>
+                      <data value="79" class="stock" title="Available Stock">79</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Crochet Crop Tops</p>
+                      <data value="23" class="stock" title="Available Stock">23</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icon/crochetsvg.webp" alt="babies collection" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Kiddies</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Crochet Baby socks</p>
+                      <data value="50" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Crochet Mini Beanies</p>
+                      <data value="48" class="stock" title="Available Stock">48</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icon/crochetsvg.webp" alt="bags" class="menu-title-img" width="20" height="20">
+
+                    <p class="menu-title">Crochet Bags</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Crochet Shopping Bag</p>
+                      <data value="62" class="stock" title="Available Stock">62</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Crochet Gym Backpack</p>
+                      <data value="35" class="stock" title="Available Stock">35</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Crochet Sling Purse</p>
+                      <data value="80" class="stock" title="Available Stock">80</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Crochet Wallet</p>
+                      <data value="75" class="stock" title="Available Stock">75</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="product-showcase">
+
+            <h3 class="showcase-heading">best sellers</h3>
+
+            <div class="showcase-wrapper">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/crochet items/bestseller (4).jpg" alt="bikini" width="75" height="75"
+                      class="showcase-img">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Beige Bikini Set - X Small</h4>
+                    </a>
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>R130.00</del>
+                      <p class="price">R110.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/crochet items/bestseller (2).jpg" alt="bikini" class="showcase-img"
+                      width="75" height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Tye Dye Bikini Set - Small</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>R145.00</del>
+                      <p class="price">R120.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/crochet items/bestseller (1).jpg" alt="bikini" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Black Binini Set - Medium</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>R150.00</del>
+                      <p class="price">R130.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/crochet items/bestseller (3).jpg" alt="bikini" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Green Bikini Set - Large</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>R180.00</del>
+                      <p class="price">R150.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="product-box">
+
+          <!--
+            - PRODUCT MINIMAL
+          -->
+
+          <div class="product-minimal">
+
+            <div class="product-showcase">
+
+              <h2 class="title">Colours In Stock</h2>
+
+              <div class="showcase-wrapper has-scrollbar">
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/crochet items/colours (1).jpg" alt="Baby Blue Wool" width="70"
+                        class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Baby Blue</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Colours</a>
+
+                      <div class="price-box">
+                        <p class="price">R45.00</p>
+                        <del></del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/crochet items/colours (2).jpg" alt="Rustic colour wool"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Rustic combo</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Colours</a>
+
+                      <div class="price-box">
+                        <p class="price">R80.00</p>
+                        <del>R90.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/crochet items/colours (3).jpg" alt="tye dye coloured wool"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Baby tye dye</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Colours</a>
+
+                      <div class="price-box">
+                        <p class="price">R65.00</p>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/crochet items/colours (5).jpg" alt="dusty pink wool"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Blush combo</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Colours</a>
+
+                      <div class="price-box">
+                        <p class="price">R95.00</p>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/crochet items/colours (6).jpg" alt="pink wool" class="showcase-img"
+                        width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Baby pink</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Colours</a>
+
+                      <div class="price-box">
+                        <p class="price">R60.00</p>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/crochet items/colours (7).jpg" alt="green wool"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Green Combo</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Colours</a>
+
+                      <div class="price-box">
+                        <p class="price">R32.00</p>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/crochet items/colours (8).jpg" alt="nude coloured wool"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Nude combo</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Colours</a>
+
+                      <div class="price-box">
+                        <p class="price">R90.00</p>
+                        
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/crochet items/colours (9).jpg" alt="brown wool"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Brown combo</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Colours</a>
+
+                      <div class="price-box">
+                        <p class="price">R90.00</p>
+                        
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="product-showcase">
+
+              <h2 class="title">Trending Colours</h2>
+
+              <div class="showcase-wrapper  has-scrollbar">
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/crochet items/colours (10).jpg" alt="mint green wool"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Mint green</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Colours</a>
+
+                      <div class="price-box">
+                        <p class="price">R49.00</p>
+                       
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/crochet items/colours (11).jpg" alt="blue wool"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Shades of Blue</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Colours</a>
+
+                      <div class="price-box">
+                        <p class="price">R78.00</p>
+                       
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/crochet items/colours (12).jpg" alt="bright coloured wool"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Summer shades</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Colours</a>
+
+                      <div class="price-box">
+                        <p class="price">R95.00</p>
+                        <del>R105.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/crochet items/colours (13).jpg" alt="dark coloured wool"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Autumn shades</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Colours</a>
+
+                      <div class="price-box">
+                        <p class="price">R54.00</p>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/crochet items/colours (14).jpg" alt="navy blue wool"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Navy-Blue Galaxy</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Colours</a>
+
+                      <div class="price-box">
+                        <p class="price">R52.00</p>
+                      
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/crochet items/colours (15).jpg" alt="yellow wool" class="showcase-img"
+                        width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Yellow Cotton Candy</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Colours</a>
+
+                      <div class="price-box">
+                        <p class="price">R70.00</p>
+                   
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/crochet items/colours (16).jpg" alt="green wool"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">The Grinch</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Colours</a>
+
+                      <div class="price-box">
+                        <p class="price">R56.00</p>
+                        <del>R78.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/crochet items/colours (17).jpg" alt="blue wool" class="showcase-img"
+                        width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Shades of Sea Blue</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Colours</a>
+
+                      <div class="price-box">
+                        <p class="price">R50.00</p>
+                        <del>R55.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="product-showcase">
+
+              <h2 class="title">Top Rated Colours</h2>
+
+              <div class="showcase-wrapper  has-scrollbar">
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/crochet items/colours (18).jpg" alt="blue tye dye coloured wool"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Blue Tye Dye</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Colours</a>
+
+                      <div class="price-box">
+                        <p class="price">R50.00</p>
+                      
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/crochet items/colours (19).jpg" alt="grey & white wool"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Grey + White = Silver </h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Colours</a>
+
+                      <div class="price-box">
+                        <p class="price">R84.00</p>
+                        <del>R100.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/crochet items/colours (20).jpg" alt="blue wool"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Bluey</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Colours</a>
+
+                      <div class="price-box">
+                        <p class="price">R42.00</p>
+                        <del>R60.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/crochet items/colours (21).jpg" alt="pink wool"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Pretty in Pink</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Colours</a>
+
+                      <div class="price-box">
+                        <p class="price">R45.00</p>
+                        
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/crochet items/colours (22).jpg" alt="light brown wool"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Light Brown</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Colours</a>
+
+                      <div class="price-box">
+                        <p class="price">R62.00</p>
+                        
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/crochet items/colours (23).jpg" alt="sweet pink wool" class="showcase-img"
+                        width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Sweet Pink</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Colours</a>
+
+                      <div class="price-box">
+                        <p class="price">R56.00</p>
+                       
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/crochet items/colours (24).jpg" alt="rainbow coloured wool"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Rainbow</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Colours</a>
+
+                      <div class="price-box">
+                        <p class="price">R50.00</p>
+                        
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/crochet items/colours (25).jpg" alt="light pink wool"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Light pink</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Colours</a>
+
+                      <div class="price-box">
+                        <p class="price">R40.00</p>
+                       
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - PRODUCT FEATURED
+          -->
+
+          <div class="product-featured">
+
+            <h2 class="title">Deal of the day</h2>
+
+            <div class="showcase-wrapper has-scrollbar">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <div class="showcase-banner">
+                    <img src="./assets/images/products/BIKINI.png" alt="Bikini" class="showcase-img">
+                  </div>
+
+                  <div class="showcase-content">
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <a href="#">
+                      <h3 class="showcase-title">
+                        <a href="#" class="showcase-title">Handmade Crochet Bralette</a>
+                      </h3>
+
+                      <p class="showcase-desc">
+                        Beautifully handcrafted crochet bralette, perfect for summer beach days. Made with soft,
+                        breathable yarn for comfort and style.
+                        <br><strong>Sizes:</strong> S, M, L
+                        <br><strong>Colors:</strong> Green, Orange, Yellow, Black, White
+                        <br><strong>Price:</strong> R250.00
+                      </p>
+
+                      <div class="price-box">
+                        <p class="price">R99.00</p>
+                        <del>R250.00</del>
+                      </div>
+
+
+                      <button class="add-cart-btn">add to cart</button>
+
+                      <div class="showcase-status">
+                        <div class="wrapper">
+                          <p>
+                            already sold: <b>45</b>
+                          </p>
+
+                          <p>
+                            available: <b>10</b>
+                          </p>
+                        </div>
+
+                        <div class="showcase-status-bar"></div>
+                      </div>
+
+                      <div class="countdown-box">
+
+                        <p class="countdown-desc">
+                          Hurry Up! Offer ends in:
+                        </p>
+
+                        <div class="countdown">
+
+                          <div class="countdown-content">
+
+                            <p class="display-number">5</p>
+
+                            <p class="display-text">Days</p>
+
+                          </div>
+
+                          <div class="countdown-content">
+                            <p class="display-number">12</p>
+                            <p class="display-text">Hours</p>
+                          </div>
+
+                          <div class="countdown-content">
+                            <p class="display-number">50</p>
+                            <p class="display-text">Min</p>
+                          </div>
+
+                          <div class="countdown-content">
+                            <p class="display-number">00</p>
+                            <p class="display-text">Sec</p>
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-container">
+
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <!--
+            - PRODUCT GRID
+          -->
+
+    <div class="product-main">
+
+      <h2 class="title">Mamalu Crochet New Products</h2>
+
+      <div class="product-grid">
+
+        <div class="showcase">
+
+          <div class="showcase-banner">
+
+            <img src="./assets/images/products/toppy (2).jpg" alt="Tops" width="300" class="product-img default">
+            <img src="./assets/images/products/toppy (1).jpg" alt="Tops" width="300" class="product-img hover">
+
+            <p class="showcase-badge">15%</p>
+
+            <div class="showcase-actions">
+
+              <button class="btn-action">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="repeat-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="bag-add-outline"></ion-icon>
+              </button>
+
+            </div>
+
+          </div>
+
+          <div class="showcase-content">
+
+            <a href="#" class="showcase-category">Tops</a>
+
+            <a href="#">
+              <h3 class="showcase-title">Fitted Top</h3>
+            </a>
+
+            <div class="showcase-rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <div class="price-box">
+              <p class="price">R263.5.00</p>
+              <del>R310.00</del>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="showcase">
+
+          <div class="showcase-banner">
+            <img src="./assets/images/products/gw top (1).jpg" alt="Halter Top" class="product-img default" width="300">
+            <img src="./assets/images/products/gw top (2).jpg" alt="Halter Top" class="product-img hover" width="300">
+
+            <p class="showcase-badge angle black">sale</p>
+
+            <div class="showcase-actions">
+              <button class="btn-action">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="repeat-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="bag-add-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="showcase-content">
+            <a href="#" class="showcase-category">Tops</a>
+
+            <h3>
+              <a href="#" class="showcase-title">Halter Top</a>
+            </h3>
+
+            <div class="showcase-rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <div class="price-box">
+              <p class="price">R199.00</p>
+              <del>R260.00</del>
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <div class="showcase">
+
+          <div class="showcase-banner">
+            <img src="./assets/images/products/bralette (1).jpg" alt="Bralette" class="product-img default" width="300">
+            <img src="./assets/images/products/bralette (2).jpg" alt="Bralette" class="product-img hover" width="300">
+
+            <div class="showcase-actions">
+              <button class="btn-action">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="repeat-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="bag-add-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="showcase-content">
+            <a href="#" class="showcase-category">Swim wear</a>
+
+            <h3>
+              <a href="#" class="showcase-title">Bralette</a>
+            </h3>
+
+            <div class="showcase-rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <div class="price-box">
+              <p class="price">R109.00</p>
+              <del>R205.00</del>
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <div class="showcase">
+
+          <div class="showcase-banner">
+            <img src="./assets/images/products/blue (1).jpg" alt="Bikini set" class="product-img default" width="300">
+            <img src="./assets/images/products/blue (2).jpg" alt="Bikini set" class="product-img hover" width="300">
+
+            <p class="showcase-badge angle pink">new</p>
+
+            <div class="showcase-actions">
+              <button class="btn-action">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="repeat-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="bag-add-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="showcase-content">
+            <a href="#" class="showcase-category">Swim wear</a>
+
+            <h3>
+              <a href="#" class="showcase-title">Blue Bikini Set</a>
+            </h3>
+
+            <div class="showcase-rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+
+            <div class="price-box">
+              <p class="price">R299.00</p>
+              <del>R405.00</del>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="showcase">
+
+          <div class="showcase-banner">
+            <img src="./assets/images/products/mesh (1).jpg" alt="Bikini mesh set" class="product-img default"
+              width="300">
+            <img src="./assets/images/products/mesh (2).jpg" alt="Bikini mesh set" class="product-img hover"
+              width="300">
+
+            <div class="showcase-actions">
+              <button class="btn-action">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="repeat-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="bag-add-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="showcase-content">
+            <a href="#" class="showcase-category">Swim wear</a>
+
+            <h3>
+              <a href="#" class="showcase-title">Red Bikini Mesh Set</a>
+            </h3>
+
+            <div class="showcase-rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+
+            <div class="price-box">
+              <p class="price">R99.00</p>
+              <del>R105.00</del>
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <div class="showcase">
+
+          <div class="showcase-banner">
+            <img src="./assets/images/products/yellow (2).jpg" alt="Yellow top" class="product-img default" width="300">
+            <img src="./assets/images/products/yellow (1).jpg" alt="Yellow top" class="product-img hover" width="300">
+
+            <p class="showcase-badge angle black">sale</p>
+
+            <div class="showcase-actions">
+              <button class="btn-action">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="repeat-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="bag-add-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="showcase-content">
+            <a href="#" class="showcase-category">Tops</a>
+
+            <h3>
+              <a href="#" class="showcase-title">Bee top</a>
+            </h3>
+
+            <div class="showcase-rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <div class="price-box">
+              <p class="price">R150.00</p>
+              <del>R170.00</del>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="showcase">
+
+          <div class="showcase-banner">
+            <img src="./assets/images/products/red (1).jpg" alt="Red top" class="product-img default" width="300">
+            <img src="./assets/images/products/red (2).jpg" alt="Red top" class="product-img hover" width="300">
+
+            <div class="showcase-actions">
+              <button class="btn-action">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="repeat-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="bag-add-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="showcase-content">
+            <a href="#" class="showcase-category">Tops</a>
+
+            <h3>
+              <a href="#" class="showcase-title">Red top</a>
+            </h3>
+
+            <div class="showcase-rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <div class="price-box">
+              <p class="price">R100.00</p>
+              <del>R120.00</del>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="showcase">
+
+          <div class="showcase-banner">
+            <img src="./assets/images/products/swimsuit 1 (1).jpg" alt="Swimsuit" class="product-img default"
+              width="300">
+            <img src="./assets/images/products/swimsuit 1 (2).jpg" alt="Swimsuit" class="product-img hover" width="300">
+
+            <p class="showcase-badge angle black">sale</p>
+
+            <div class="showcase-actions">
+              <button class="btn-action">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="repeat-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="bag-add-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="showcase-content">
+            <a href="#" class="showcase-category">Swim wear</a>
+
+            <h3>
+              <a href="#" class="showcase-title">Swimsuit</a>
+            </h3>
+
+            <div class="showcase-rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <div class="price-box">
+              <p class="price">R225.00</p>
+              <del>R300.00</del>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="showcase">
+
+          <div class="showcase-banner">
+            <img src="./assets/images/products/swim 1 (1).jpg" alt="Bikini" class="product-img default" width="300">
+            <img src="./assets/images/products/swim 1 (3).jpg" alt="Bikini" class="product-img hover" width="300">
+
+            <div class="showcase-actions">
+              <button class="btn-action">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="repeat-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="bag-add-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="showcase-content">
+            <a href="#" class="showcase-category">Swim wear</a>
+
+            <h3>
+              <a href="#" class="showcase-title">Bikini set</a>
+            </h3>
+
+            <div class="showcase-rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <div class="price-box">
+              <p class="price">R200.00</p>
+              <del>R255.00</del>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="showcase">
+
+          <div class="showcase-banner">
+            <img src="./assets/images/products/halter 1 (1).jpg" alt="Halter top" class="product-img default"
+              width="300">
+            <img src="./assets/images/products/halter 1 (2).jpg" alt="Halter top" class="product-img hover" width="300">
+
+            <p class="showcase-badge angle black">sale</p>
+
+            <div class="showcase-actions">
+              <button class="btn-action">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="repeat-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="bag-add-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="showcase-content">
+            <a href="#" class="showcase-category">Tops</a>
+
+            <h3>
+              <a href="#" class="showcase-title">Crop Top</a>
+            </h3>
+
+            <div class="showcase-rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <div class="price-box">
+              <p class="price">R180.00</p>
+              <del>R200.00</del>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="showcase">
+
+          <div class="showcase-banner">
+            <img src="./assets/images/products/top 1.jpg" alt="Reversable top" class="product-img default" width="200">
+            <img src="./assets/images/products/top 2.jpg" alt="Reversable top" class="product-img hover" width="300">
+
+            <div class="showcase-actions">
+              <button class="btn-action">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="repeat-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="bag-add-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="showcase-content">
+            <a href="#" class="showcase-category">Tops</a>
+
+            <h3>
+              <a href="#" class="showcase-title"> Reversable top</a>
+            </h3>
+
+            <div class="showcase-rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <div class="price-box">
+              <p class="price">R150.00</p>
+              <del>R250.00</del>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="showcase">
+
+          <div class="showcase-banner">
+            <img src="./assets/images/products/romper-1.jpg" alt="Romper" class="product-img default" width="100">
+            <img src="./assets/images/products/romper-2.jpg" alt="Romper" class="product-img hover" width="100">
+
+            <p class="showcase-badge angle black">sale</p>
+
+            <div class="showcase-actions">
+              <button class="btn-action">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="repeat-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="bag-add-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="showcase-content">
+            <a href="#" class="showcase-category">Women</a>
+
+            <h3>
+              <a href="#" class="showcase-title">Halter top long bottom romper</a>
+            </h3>
+
+            <div class="showcase-rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <div class="price-box">
+              <p class="price">R500.00</p>
+              <del>R850.00</del>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - TESTIMONIALS, CTA & SERVICE
+    -->
+
+    <div>
+
+      <div class="container">
+
+        <div class="testimonials-box">
+
+          <!--
+            - TESTIMONIALS
+          -->
+
+          <div class="testimonial">
+
+            <h2 class="title">Letter from the CEO</h2>
+
+            <div class="testimonial-card">
+
+              <img src="./assets/images/see.jpg" alt="SM" class="testimonial-banner" width="80" height="80">
+
+              <p class="testimonial-name">Senamile Mzobe</p>
+
+              <p class="testimonial-title">Grateful to God for the gift of my hands </p>
+
+              <img src="./assets/images/icons/quotes.svg" alt="quotation" class="quotation-img" width="26">
+
+              <p class="testimonial-desc">
+                Thank you Jesus, that I am able to code a website for my business by myself.
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - CTA
+          -->
+
+          <div class="cta-container">
+
+            <img src="./assets/images/cozy.jpg" alt="winter collection" class="cta-banner">
+
+            <a href="#" class="cta-content">
+
+              <p class="discount">25% Discount for return customers</p>
+
+              <h2 class="cta-title">Winter collection</h2>
+
+              <p class="cta-text">Starting @ R100</p>
+
+              <button class="cta-btn">Shop now</button>
+
+            </a>
+
+          </div>
+
+
+
+          <!--
+            - SERVICE
+          -->
+
+          <div class="service">
+
+            <h2 class="title">Our Services</h2>
+
+            <div class="service-container">
+
+              <a href="#" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="boat-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">Worldwide Free Delivery</h3>
+                  <p class="service-desc">For Orders Over R500</p>
+
+                </div>
+
+              </a>
+
+              <a href="#" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="rocket-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">Next Day delivery</h3>
+                  <p class="service-desc">Pietermaritzburg Orders Only</p>
+
+                </div>
+
+              </a>
+
+              <a href="#" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="call-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">Best Response time</h3>
+                  <p class="service-desc">Hours: 16:00 PM - 21:00 PM</p>
+
+                </div>
+
+              </a>
+
+              <a href="#" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="arrow-undo-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">Taking care of wool items</h3>
+                  <p class="service-desc">Easy guide provided or return to wash at a cost</p>
+
+                </div>
+
+              </a>
+
+              <a href="#" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="ticket-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">20% money back</h3>
+                  <p class="service-desc">For Orders Over R250</p>
+
+                </div>
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - BLOG
+    -->
+
+    <div class="blog">
+
+      <div class="container">
+
+        <div class="blog-container has-scrollbar">
+
+          <div class="blog-card">
+
+            <a href="#">
+              <img src="./assets/images/table picture.png" alt="Handmade Crochet KPIs 2025: A Guide for Craftpreneurs"
+                width="300" class="blog-banner">
+            </a>
+
+            <div class="blog-content">
+
+              <a href="#" class="blog-category">Clothing & Accessories</a>
+
+              <a href="#">
+                <h3 class="blog-title">Handmade Crochet KPIs 2025: A Guide for Craftpreneurs</h3>
+              </a>
+
+              <p class="blog-meta">
+                By <cite>Mamalu Admin</cite> / <time datetime="2025-06-05">Jun 05, 2025</time>
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="blog-card">
+
+            <a href="#">
+              <img src="./assets/images/trends pic.png" alt="How to Win at Craft Fairs & Pop-ups." class="blog-banner"
+                width="300">
+            </a>
+
+            <div class="blog-content">
+
+              <a href="#" class="blog-category">Events & Sales</a>
+
+              <h3>
+                <a href="#" class="blog-title">Local Market Trends: How to Win at Craft Fairs & Pop-ups</a>
+              </h3>
+
+              <p class="blog-meta">
+                By <cite>Senamile Mzobe</cite> / <time datetime="2025-05-18">May 18, 2025</time>
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="blog-card">
+
+            <a href="#">
+              <img src="./assets/images/consty.png" alt="Claim Your Share of E-commerce Success" class="blog-banner"
+                width="300">
+            </a>
+
+            <div class="blog-content">
+
+              <a href="#" class="blog-category">Digital Sales & Marketing</a>
+
+              <h3>
+                <a href="#" class="blog-title">Online Sales for Handmade Brands: Claim Your Share of E-commerce
+                  Success</a>
+              </h3>
+
+              <p class="blog-meta">
+                By <cite>Contance Sithole</cite> / <time datetime="2025-05-10">May 10, 2025</time>
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="blog-card">
+
+            <a href="#">
+              <img src="./assets/images/last blog.png" alt="Seasonal Colour Trends Winter 2025" class="blog-banner"
+                width="300">
+            </a>
+
+            <div class="blog-content">
+
+              <a href="#" class="blog-category">Style & Design</a>
+
+              <h3>
+                <a href="#" class="blog-title">Seasonal Colour Trends: What is Hot in Winter 2025 for Crochet
+                  Fashion</a>
+              </h3>
+
+              <p class="blog-meta">
+                By <cite>Mamalu Design Team</cite> / <time datetime="2025-03-15">Mar 15, 2025</time>
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+
+
+  <!--
+    - FOOTER
+  -->
+
+  <footer>
+
+    <div class="footer-category">
+
+      <div class="container">
+
+        <h2 class="footer-category-title">IDEAS FOR YOUR CUSTOM ORDERS</h2>
+
+        <div class="footer-category-box">
+
+          <h3 class="category-box-title">Headwear :</h3>
+
+          <a href="#" class="footer-category-link">heanies</a>
+          <a href="#" class="footer-category-link">hats</a>
+          <a href="#" class="footer-category-link">headbands</a>
+          <a href="#" class="footer-category-link">scrunchies</a>
+          <a href="#" class="footer-category-link">balaclava</a>
+          <a href="#" class="footer-category-link">bucket hat</a>
+          <a href="#" class="footer-category-link">ear warmers</a>
+
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Clothing :</h3>
+
+          <a href="#" class="footer-category-link">sweaters</a>
+          <a href="#" class="footer-category-link">cardigans</a>
+          <a href="#" class="footer-category-link">crop tops</a>
+          <a href="#" class="footer-category-link">halter tops</a>
+          <a href="#" class="footer-category-link">bikinis</a>
+          <a href="#" class="footer-category-link">bralettes</a>
+          <a href="#" class="footer-category-link">dresses</a>
+          <a href="#" class="footer-category-link">skirts</a>
+          <a href="#" class="footer-category-link">shorts</a>
+          <a href="#" class="footer-category-link">cover ups</a>
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Accessories :</h3>
+
+          <a href="#" class="footer-category-link">bags</a>
+          <a href="#" class="footer-category-link">earrings</a>
+          <a href="#" class="footer-category-link">totes</a>
+          <a href="#" class="footer-category-link">keychains</a>
+          <a href="#" class="footer-category-link">phone pouch</a>
+          <a href="#" class="footer-category-link">sunglass holder</a>
+          <a href="#" class="footer-category-link">bracelets</a>
+          <a href="#" class="footer-category-link">mini sling bags</a>
+          <a href="#" class="footer-category-link">crossbody bags</a>
+          <a href="#" class="footer-category-link">wallet</a>
+          <a href="#" class="footer-category-link">laptop sleeve</a>
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Home Decor :</h3>
+
+          <a href="#" class="footer-category-link">throw blankets</a>
+          <a href="#" class="footer-category-link">cushion covers</a>
+          <a href="#" class="footer-category-link">table runners</a>
+          <a href="#" class="footer-category-link">place mats</a>
+          <a href="#" class="footer-category-link">coasters</a>
+          <a href="#" class="footer-category-link">wall hangings</a>
+          <a href="#" class="footer-category-link">dream catchers</a>
+          <a href="#" class="footer-category-link">plant holders</a>
+          <a href="#" class="footer-category-link">rug mats</a>
+          <a href="#" class="footer-category-link">storage basket</a>
+          <a href="#" class="footer-category-link">curtain tiebacks</a>
+          <a href="#" class="footer-category-link">bible cover</a>
+          <a href="#" class="footer-category-link">armrest pockets</a>
+          <a href="#" class="footer-category-link">mug warmer</a>
+          <a href="#" class="footer-category-link">kitchen towel</a>
+          <a href="#" class="footer-category-link">framed art</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer-nav">
+
+      <div class="container">
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Popular Categories</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Women</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Man</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Kiddies</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Home</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Yeshua Inspired</a>
+          </li>
+
+        </ul>
+
+
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">About Mamalu Crcohet</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Delivery</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Important Notice</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Terms and conditions</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">About us</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Secure payment</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Services</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Prices drop</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New products</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best sales</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contact us</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sitemap</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Contact</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="content">
+              Pietermaritzburg
+              Scottsville, 3201
+            </address>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+27 67 123 9136" class="footer-nav-link">(+27) 67123-9136</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:senamilemzobe.sm@gmail.com" class="footer-nav-link">senamilemzobe.sm@gmail.com</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Follow Mamalu Crochet</h2>
+          </li>
+
+          <li>
+            <ul class="social-link">
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+        <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+
+        <p class="copyright">
+          Copyright &copy; <a href="#">Senamile Mzobe</a> all rights reserved.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
